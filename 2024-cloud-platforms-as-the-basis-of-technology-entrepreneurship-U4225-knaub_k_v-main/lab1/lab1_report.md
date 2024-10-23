@@ -1,12 +1,12 @@
-University: [ITMO University](https://itmo.ru/ru/)
-Faculty: [FICT](https://fict.itmo.ru)
-Course: [Cloud platforms as the basis of technology entrepreneurship](https://itmo-ict-faculty.github.io/cloud-platforms-as-the-basis-of-technology-entrepreneurship/education/labs/)
-Year: 2024
-Group: U4225
-Author: Knaub Klementina Vladimirovna
-Lab: Lab1
-Date of create: 22.10.2024
-Date of finished: 
+University: [ITMO University](https://itmo.ru/ru/)\
+Faculty: [FICT](https://fict.itmo.ru)\
+Course: [Cloud platforms as the basis of technology entrepreneurship](https://itmo-ict-faculty.github.io/cloud-platforms-as-the-basis-of-technology-entrepreneurship/education/labs/)\
+Year: 2024\
+Group: U4225\
+Author: Knaub Klementina Vladimirovna\
+Lab: Lab1\
+Date of create: 22.10.2024\
+Date of finished: 22.10.2024\
 
 Описание:
 Это первая лабораторная работа "Обзор Google Cloud и исследование основных сервисов."
@@ -18,26 +18,26 @@ Date of finished:
 
 1. Получение доступа к Google Cloud: 
     - Заполнила Google форму, приложив свою Gmail почту, для получения доступа к Google Cloud.
-	![1](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/1.jpg)
+	![1](/lab1/1.jpg)
 2. Создание Service Account:
     - Вошла в вкладку IAM и создала Service Account с ролью Storage Admin.
-	![2](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/2.jpg)
-	![3](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/3.jpg)
+	![2](/lab1/2.jpg)
+	![3](/lab1/3.jpg)
 3. Создание Compute Engine:
     - Создала минимальный Compute Engine (виртуальную машину) с Machine type e2-micro в режиме spot.
-	![4](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/4.jpg)
+	![4](/lab1/4.jpg)
 4. Копирование файлов с помощью gsutils:
     - С помощью утилиты gsutils нашла бакет lab1-bucket-itmo и скопировала 3 файла в локальную папку на VM.
     - Используя команду `ls -lah` отобразила, что эти файлы хранятся на VM.
-	![5](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/5.jpg)
-	![6](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/6.jpg)
-	![7](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/7.jpg)
+	![5](/lab1/5.jpg)
+	![6](/lab1/6.jpg)
+	![7](/lab1/7.jpg)
 5. Изменение прав доступа Service Account:
     - Изменила права доступа для своего Service Account с Storage Admin на Compute Viewer.
-	![8](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/8.jpg)
-	![9](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/9.jpg)
+	![8](/lab1/8.jpg)
+	![9](/lab1/9.jpg)
     - Попыталась повторить пункт с копированием данных.
-	![10](github.com/klementina424/2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-U4225-knaub_k_v/raw/master/lab1/10.jpg)
+	![10](/lab1/10.jpg)
     - Результат: Копирование файлов не выполнилось. Это подтверждает, что роль Compute Viewer не предоставляет права на доступ к хранилищу данных.
 6. Удаление созданных сервисов:
     - Удалила созданные сервисы: Service Account и виртуальную машину.
